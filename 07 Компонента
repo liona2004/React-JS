@@ -1,0 +1,44 @@
+Компонента - это функция, возвращающая разметку JSX. Эту функцию мы никогда не вызываем. Только вставляем ее как тег
+function Welcome () {
+  return <h1>Hello, IT-INCUBATOR</h1>;
+}
+ИЛИ
+const Welcome = () => { //стрелочная фцнкция
+  return <h1>Hello, IT-INCUBATOR</h1>; // если return на одной строке скобки () можно не ставить
+}
+
+const Header = () => {
+return (<div>
+        <a>Home</a>
+        <a>News Feed</a>
+        <a>Messages</a>
+      </div>);
+}
+
+const App = () => {
+  return (
+  <div>
+    <Header />
+    <Technologies />
+  </div>);
+}
+const Technologies = () => {
+  return (
+    <div>
+        <ul>
+          <li>html</li>
+          <li>js</li>
+          <li>react</li>
+        </ul>
+    </div>
+  )
+}
+
+const Header = () => {
+  return (<div>
+          <a>Home</a>
+          <a>News Feed</a>
+          <a>Messages</a>
+        </div>);
+  }
+export default App;
